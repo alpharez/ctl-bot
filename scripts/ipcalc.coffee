@@ -1,4 +1,4 @@
-Netmask = require('netmask').netmask
+Netmask = require('netmask').Netmask
 
 module.exports = (robot) ->
 
