@@ -5,11 +5,11 @@ module.exports = (robot) ->
  day = today.getDay()
  daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
  if daylist[day] == "Sunday"
-   T3 = ["Bost", "Davis", "Wilbourne"]
+   T3 = ["Bost", "Davis", "Wilbourne", "Byerly"]
  else if (daylist[day] == "Monday" or daylist[day] == "Tuesday")
-   T3 = ["Boevy", "Bost", "Clement", "Couch", "Davis", "Flip", "Larry", "Beno", "Erica", "Wilfred", "Justin", "Wilbourne"]
+   T3 = ["Boevy", "Bost", "Byerly", "Clement", "Couch", "Davis", "Flip", "Larry", "Beno", "Erica", "Wilfred", "Justin", "Wilbourne"]
  else if daylist[day] == "Wednesday"
-   T3 = ["Boevy", "Bost", "Clement", "Couch", "Davis", "Flip", "Larry", "Beno", "Erica", "Wilfred", "Justin", "Wilbourne", "Garcia", "Kim", "Hopper"]
+   T3 = ["Boevy", "Bost", "Byerly", "Clement", "Couch", "Davis", "Flip", "Larry", "Beno", "Erica", "Wilfred", "Justin", "Wilbourne", "Garcia", "Kim", "Hopper"]
  else if (daylist[day] == "Thursday" or daylist[day] == "Friday")
    T3 = ["Boevy", "Clement", "Couch", "Flip", "Larry", "Beno", "Erica", "Wilfred", "Justin", "Garcia", "Kim", "Hopper"]
  else if daylist[day] == "Saturday"
@@ -24,4 +24,4 @@ module.exports = (robot) ->
 
  robot.hear /whovol/i, (res) ->
 
-  res.send daylist[day], T3
+  res.send daylist[day] + ": " + T3
