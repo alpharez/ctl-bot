@@ -16,10 +16,9 @@ module.exports = (robot) ->
    T3 = ["Garcia", "Kim", "Hopper"]
  else
    T3 = ["Boevy", "Bost", "Hezel", "Flip", "Sau", "Wilbourne", "Davis", "Johnson", "Brenton", "Byerly", "Clement", "Pascasio", "Krull", "Hopper", "Rodgers", "Couch", "Garcia"]
- volunteer = Math.floor Math.random() * (T3.length)
 
  robot.hear /volunteer/i, (res) ->
-
+  volunteer = Math.floor Math.random() * (T3.length)
   res.send T3[volunteer]
 
  robot.hear /whovol/i, (res) ->
