@@ -1,6 +1,9 @@
 # TODO:
 
-module.exports = (robot) ->
+testfunction = ->
+ console.log "test"
+
+getRoster = ->
  today = new Date
  day = today.getDay()
  daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -16,11 +19,18 @@ module.exports = (robot) ->
    T3 = ["Garcia", "Kim", "Hopper"]
  else
    T3 = ["Boevy", "Bost", "Hezel", "Flip", "Sau", "Wilbourne", "Davis", "Johnson", "Brenton", "Byerly", "Clement", "Pascasio", "Krull", "Hopper", "Rodgers", "Couch", "Garcia"]
+ return T3
+
+module.exports = (robot) ->
 
  robot.hear /volunteer/i, (res) ->
-  volunteer = Math.floor Math.random() * (T3.length)
-  res.send T3[volunteer]
+  roster = getRoster()
+  volunteer = Math.floor Math.random() * (roster.length)
+  res.send roster[volunteer]
 
  robot.hear /whovol/i, (res) ->
-
-  res.send daylist[day] + ": " + T3
+  today = new Date
+  day = today.getDay()
+  daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  res.send daylist[day] + ": " + getRoster()
+  testfunction()
