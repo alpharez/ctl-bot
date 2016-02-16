@@ -30,4 +30,3 @@ module.exports = (robot) ->
   day = today.getDay()
   daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   res.send daylist[day] + ": " + getRoster()
-  testfunction()
