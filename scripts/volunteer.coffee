@@ -1,8 +1,5 @@
 # TODO:
 
-testfunction = ->
- console.log "test"
-
 getRoster = ->
  today = new Date
  day = today.getDay()
