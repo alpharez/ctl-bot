@@ -1,0 +1,33 @@
+{
+  "name": "hubot-urban",
+  "description": "A Hubot script to define terms via Urban Dictionary",
+  "version": "1.0.0",
+  "main": "./src/urban",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notpeter/hubot-urban.git"
+  },
+  "keywords": [
+    "hubot",
+    "urbandictionary",
+    "dictionary",
+    "urban",
+    "define"
+  ],
+  "contributors": [{
+  "name": "Robbie Trencheny",
+  "web": "http://twitter.com/Robbie"
+  },{
+  "name": "Benjamin Eidelman",
+  "web": "http://twitter.com/beneidel"
+  },{
+  "name": "Peter Tripp",
+  "web": "http://twitter.com/notpeter"
+  }],
+  "author": "Travis Jeffery (@travisjeffery) (https://github.com/travisjeffery)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notpeter/hubot-urban/issues"
+  },
+  "homepage": "https://github.com/notpeter/hubot-urban"
+}
